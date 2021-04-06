@@ -76,4 +76,13 @@
 	    android:layout="@layout/preference_explosives_miscellaneous"
 	    />
 
+        <!-- FOD -->
+        <Preference
+            android:key="fod"
+            android:title="@string/fod_title"
+            android:summary="@string/fod_icon_picker_summary"
+            android:fragment="com.blaster.settings.Fod"
+	    android:layout="@layout/preference_blaster_fod"
+	    />
+
 </PreferenceScreen>
