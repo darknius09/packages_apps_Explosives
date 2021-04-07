@@ -59,4 +59,12 @@
 	    android:layout="@layout/preference_explosives_lockscreen"
 	    />
 
+        <!-- Miscellaneous -->
+        <Preference
+            android:key="miscellaneous_settings"
+            android:title="@string/miscellaneous_title"
+            android:fragment="com.blaster.settings.Miscellaneous"
+	    android:layout="@layout/preference_explosives_miscellaneous"
+	    />
+
 </PreferenceScreen>
