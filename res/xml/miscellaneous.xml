@@ -45,6 +45,14 @@
             android:entryValues="@array/adaptive_playback_timeout_values"
             android:defaultValue="30000"
             android:dependency="adaptive_playback_enabled" />
+    <PreferenceCategory
+        android:title="@string/pulse_settings" >
+        <!-- Pulse -->
+        <Preference
+             android:key="pulse"
+             android:title="@string/pulse_settings"
+             android:summary="@string/pulse_settings_summary"
+             android:fragment="com.blaster.settings.fragments.PulseSettings" />    
     </PreferenceCategory>
 
 </PreferenceScreen>
