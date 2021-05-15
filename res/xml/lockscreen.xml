@@ -52,4 +52,13 @@
         android:summary="@string/lockscreen_media_art_summary"
         android:defaultValue="true" />
 
+    <PreferenceCategory
+            android:title="@string/ambient_settings">
+    <Preference
+        android:key="always_on_display_schedule"
+        android:title="@string/always_on_display_schedule_title"
+        android:fragment="com.blaster.settings.fragments.AODSchedule" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
