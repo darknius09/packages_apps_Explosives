@@ -84,4 +84,11 @@
 
     </PreferenceCategory>
 
+        <com.android.settings.custom.colorpicker.ColorPickerPreference
+        android:key="accent_color"
+        android:title="@string/accent_color"
+        android:summary="@string/accent_summary"
+        android:defaultValue="0xffffff"
+        android:persistent="false" />
+
 </PreferenceScreen>
