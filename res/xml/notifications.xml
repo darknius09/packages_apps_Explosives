@@ -19,12 +19,14 @@
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="notification_sound_vib_screen_on"
         android:title="@string/notification_sound_vib_screen_on_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/notification_sound_vib_screen_on_summary"
         android:defaultValue="true" />
 
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="notification_headers"
         android:title="@string/notification_headers_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/notification_headers_summary"
         android:defaultValue="true" />
 
@@ -32,6 +34,7 @@
     <Preference
         android:key="ticker_settings"
         android:title="@string/ticker_screen_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/ticker_screen_summary"
         android:fragment="com.blaster.settings.fragments.Ticker"/>        
 

@@ -15,30 +15,32 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/statusbar_title" >
-
+    <PreferenceCategory>
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="use_old_mobiletype"
         android:title="@string/use_old_mobiletype_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/use_old_mobiletype_summary"
         android:defaultValue="true" />
 
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="show_fourg_icon"
         android:title="@string/show_fourg_icon_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/show_fourg_icon_summary"
         android:defaultValue="false"/>
 
-    <PreferenceCategory
-            android:title="@string/statusbar_icon">
 	    <com.android.settings.custom.preference.SystemSettingSwitchPreference
         	android:key="show_volte_icon"
         	android:title="@string/volte_switch_title"
+            settings:iconSpaceReserved="false"
         	android:summary="@string/volte_switch_summary"
         	android:defaultValue="true" />
 
             <com.android.settings.custom.preference.SystemSettingListPreference
          	android:key="volte_icon_style"
          	android:title="@string/volte_icon_style_title"
+            settings:iconSpaceReserved="false"
          	android:entries="@array/volte_icon_type_entries"
          	android:entryValues="@array/volte_icon_type_values"
          	android:summary="%s"
@@ -48,6 +50,7 @@
     	    <com.android.settings.custom.preference.SystemSettingListPreference
          	android:key="vowifi_icon"
          	android:title="@string/vowifi_icon_title"
+            settings:iconSpaceReserved="false" 
          	android:entries="@array/vowifi_icon_entries"
          	android:entryValues="@array/vowifi_icon_values"
          	android:summary="%s"
@@ -56,36 +59,36 @@
 	    <com.android.settings.custom.preference.SystemSettingListPreference
          	android:key="vowifi_icon_style"
          	android:title="@string/vowifi_icon_style_title"
+            settings:iconSpaceReserved="false" 
          	android:entries="@array/vowifi_icon_style_entries"
          	android:entryValues="@array/vowifi_icon_style_values"
          	android:summary="%s"
          	android:defaultValue="0"/>
 
-    </PreferenceCategory>
-
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="data_disabled_icon"
         android:title="@string/data_disabled_icon_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/data_disabled_icon_summary"
         android:defaultValue="true"/>
 
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="roaming_indicator_icon"
         android:title="@string/roaming_indicator_icon_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/roaming_indicator_icon_summary"
         android:defaultValue="true"/>
-
-    <PreferenceCategory
-        android:title="@string/status_bar_clock_title">
 
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="statusbar_clock"
             android:title="@string/status_bar_clock_show"
+            settings:iconSpaceReserved="false"
             android:defaultValue="true" />
 
         <ListPreference
             android:key="statusbar_clock_style"
             android:title="@string/status_bar_clock_style_title"
+            settings:iconSpaceReserved="false"
             android:dialogTitle="@string/status_bar_clock_style_title"
             android:entries="@array/status_bar_clock_style_entries"
             android:entryValues="@array/status_bar_clock_style_values"
@@ -94,6 +97,7 @@
         <ListPreference
             android:key="statusbar_am_pm"
             android:title="@string/status_bar_am_pm_title"
+            settings:iconSpaceReserved="false"
             android:dialogTitle="@string/status_bar_am_pm_title"
             android:entries="@array/status_bar_am_pm_entries"
             android:entryValues="@array/status_bar_am_pm_values"
@@ -102,17 +106,14 @@
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="statusbar_clock_seconds"
             android:title="@string/clock_seconds_display"
+            settings:iconSpaceReserved="false"
             android:dependency="statusbar_clock"
             android:defaultValue="false" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/status_bar_date_title">
 
         <ListPreference
             android:key="clock_date_display"
             android:title="@string/clock_date_display"
+            settings:iconSpaceReserved="false"
             android:summary="@string/clock_date_display_summary"
             android:entries="@array/clock_date_display_entries"
             android:entryValues="@array/clock_date_display_values"
@@ -121,6 +122,7 @@
         <ListPreference
             android:key="clock_date_style"
             android:title="@string/clock_date_style"
+            settings:iconSpaceReserved="false"
             android:entries="@array/clock_date_style_entries"
             android:entryValues="@array/clock_date_style_values"
             android:dependency="clock_date_display" />
@@ -128,6 +130,7 @@
         <ListPreference
             android:key="clock_date_format"
             android:title="@string/clock_date_format"
+            settings:iconSpaceReserved="false"
             android:entries="@array/clock_date_format_entries_values"
             android:entryValues="@array/clock_date_format_entries_values"
             android:dependency="clock_date_display" />
@@ -135,6 +138,7 @@
         <ListPreference
             android:key="statusbar_clock_date_position"
             android:title="@string/clock_date_position"
+            settings:iconSpaceReserved="false"
             android:entries="@array/clock_date_position_entries"
             android:entryValues="@array/clock_date_position_values"
             android:dependency="clock_date_display" />

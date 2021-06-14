@@ -19,40 +19,34 @@
     <com.android.settings.custom.preference.GlobalSettingSwitchPreference
         android:key="allow_signature_fake"
         android:title="@string/allow_signature_fake"
+        settings:iconSpaceReserved="false"
         android:summary="@string/allow_signature_fake_summary"
         android:defaultValue="false" />
 
-    <com.android.settings.custom.preference.SystemSettingSwitchPreference
-        android:key="advanced_reboot"
-        android:title="@string/powermenu_advanced_reboot_title"
-        android:summary="@string/powermenu_advanced_reboot_summary"
-        android:defaultValue="true" />
-
     <PreferenceCategory
-        android:key="media"
-        android:title="@string/media_title">
+        android:key="media">
 
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="adaptive_playback_enabled"
             android:title="@string/adaptive_playback_title"
+            settings:iconSpaceReserved="false"
             android:summary="@string/adaptive_playback_summary"
             android:defaultValue="false" />
 
         <com.android.settings.custom.preference.SystemSettingListPreference
             android:key="adaptive_playback_timeout"
             android:title="@string/adaptive_playback_timeout_title"
+            settings:iconSpaceReserved="false"
             android:entries="@array/adaptive_playback_timeout_entries"
             android:entryValues="@array/adaptive_playback_timeout_values"
             android:defaultValue="30000"
             android:dependency="adaptive_playback_enabled" />
-    </PreferenceCategory>
-            
-    <PreferenceCategory
-        android:title="@string/pulse_settings" >
+
         <!-- Pulse -->
         <Preference
              android:key="pulse"
              android:title="@string/pulse_settings"
+             settings:iconSpaceReserved="false"
              android:summary="@string/pulse_settings_summary"
              android:fragment="com.blaster.settings.fragments.PulseSettings" />    
     </PreferenceCategory>

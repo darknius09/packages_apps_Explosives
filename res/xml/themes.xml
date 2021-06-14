@@ -17,12 +17,12 @@
     android:title="@string/themes_title" >
 
     <PreferenceCategory
-        android:key="theme_customization_category"
-        android:title="@string/theme_customization_category">
+        android:key="theme_customization_category">
 
         <Preference
             android:key="dark_ui_mode"
             android:title="@string/dark_ui_mode"
+            settings:iconSpaceReserved="false"         
             android:summary="@string/dark_ui_mode_summary"
             android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
             settings:controller="com.android.settings.display.DarkUIPreferenceController" />
@@ -30,6 +30,7 @@
         <Preference
             android:key="clock_style"
             android:title="@string/clock_style_title"
+            settings:iconSpaceReserved="false"
             android:summary="@string/clock_style_summary">
             <intent
                 android:action="android.intent.action.VIEW"
@@ -39,56 +40,49 @@
 
         <ListPreference
             android:key="android.theme.customization.font"
-            android:title="@string/theme_customization_font_title"/>
+            android:title="@string/theme_customization_font_title"
+            settings:iconSpaceReserved="false"/>
 
         <ListPreference
             android:key="android.theme.customization.adaptive_icon_shape"
-            android:title="@string/theme_customization_icon_shape_title"/>
+            android:title="@string/theme_customization_icon_shape_title"
+            settings:iconSpaceReserved="false"/>
 
         <ListPreference
             android:key="android.theme.customization.icon_pack.android"
-            android:title="@string/theme_customization_sysui_icon_title"/>
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="volume_panel_stuff"
-        android:title="@string/volume_panel">
+            android:title="@string/theme_customization_sysui_icon_title"
+            settings:iconSpaceReserved="false"/>
 
         <com.android.settings.custom.preference.SystemSettingListPreference
             android:key="systemui_plugin_volume"
             android:title="@string/volume_panel"
+            settings:iconSpaceReserved="false"
             android:entries="@array/volume_panel_entries"
             android:entryValues="@array/volume_panel_values"
             android:defaultValue="@string/volume_panel_aosp_val" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="quick_settings_category"
-        android:title="@string/qs_themes_category_title">
 
         <!-- Custom QS header image -->
         <Preference
             android:key="custom_header"
             android:fragment="com.blaster.settings.fragments.QsCustomHeaderSettings"
             android:title="@string/custom_header_title"
+            settings:iconSpaceReserved="false"
             android:summary="@string/custom_header_summary" />
 
         <ListPreference
             android:key="qs_tile_style"
             android:title="@string/qs_tile_style_title"
+            settings:iconSpaceReserved="false"
             android:persistent="false"
             android:entries="@array/qs_selector_entries"
             android:entryValues="@array/qs_selector_values" />
 
-    </PreferenceCategory>
-
         <com.android.settings.custom.colorpicker.ColorPickerPreference
         android:key="accent_color"
         android:title="@string/accent_color"
+        settings:iconSpaceReserved="false"
         android:summary="@string/accent_summary"
         android:defaultValue="0xffffff"
         android:persistent="false" />
-
+    </PreferenceCategory>
 </PreferenceScreen>

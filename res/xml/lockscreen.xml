@@ -16,58 +16,66 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/lockscreen_title" >
 
+    <PreferenceCategory>
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_lockscreen"
         android:title="@string/double_tap_sleep_lockscreen_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/double_tap_sleep_lockscreen_summary"
         android:defaultValue="false" />
 
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_sleep_gesture_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/double_tap_sleep_gesture_summary"
         android:defaultValue="false" />
 
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="lockscreen_battery_info"
         android:title="@string/lockscreen_battery_info_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/lockscreen_battery_info_summary"
         android:defaultValue="true" />
 
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="lockscreen_status_bar"
         android:title="@string/lockscreen_status_bar_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/lockscreen_status_bar_summary"
         android:defaultValue="true" />
 
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="lockscreen_lock_icon"
         android:title="@string/lockscreen_lock_icon_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/lockscreen_lock_icon_summary"
         android:defaultValue="true" />
 
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="lockscreen_media_art"
         android:title="@string/lockscreen_media_art_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/lockscreen_media_art_summary"
         android:defaultValue="true" />
 
-    <PreferenceCategory
-            android:title="@string/ambient_settings">
     <Preference
         android:key="always_on_display_schedule"
         android:title="@string/always_on_display_schedule_title"
+        settings:iconSpaceReserved="false"
         android:fragment="com.blaster.settings.fragments.AODSchedule" />
 
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="doze_on_charge"
             android:defaultValue="false"
             android:title="@string/doze_on_charge_title"
+            settings:iconSpaceReserved="false"
             android:summary="@string/doze_on_charge_summary" />
 
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="ambient_icons_lockscreen"
             android:title="@string/ambient_icons_lockscreen_title"
+            settings:iconSpaceReserved="false"
             android:summary="@string/ambient_icons_lockscreen_summary"
             android:defaultValue="false" />
 
@@ -85,24 +93,21 @@
         <com.android.settings.custom.colorpicker.ColorPickerPreference
             android:key="ambient_icons_color"
             android:title="@string/ambient_icons_color_title"
+            settings:iconSpaceReserved="false"
             android:dependency="ambient_icons_lockscreen"
             android:defaultValue="0xFFFFFFFF" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="pulse_ambient_light_category"
-        android:title="@string/pulse_ambient_light_category" >
 
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="pulse_ambient_light"
             android:title="@string/pulse_ambient_light_title"
+            settings:iconSpaceReserved="false"
             android:summary="@string/pulse_ambient_light_summary"
             android:defaultValue="false" />
 
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="ambient_notification_light_enabled"
             android:title="@string/ambient_notification_light_enabled_title"
+            settings:iconSpaceReserved="false"
             android:summary="@string/ambient_notification_light_enabled_summary"
             android:defaultValue="false"
             android:persistent="false" />
@@ -110,6 +115,7 @@
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="ambient_notification_light_hide_aod"
             android:title="@string/ambient_notification_light_hide_aod_title"
+            settings:iconSpaceReserved="false"
             android:summary="@string/ambient_notification_light_hide_aod_summary"
             android:defaultValue="false"
             android:dependency="ambient_notification_light_enabled"/>
@@ -117,6 +123,7 @@
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="ambient_light_pulse_for_all"
             android:title="@string/pulse_ambient_light_show_always_title"
+            settings:iconSpaceReserved="false"
             android:summary="@string/pulse_ambient_light_show_always_summary"
             android:defaultValue="false" />
 
@@ -124,6 +131,7 @@
             android:key="ambient_notification_light_timeout"
             android:dialogTitle="@string/ambient_notification_light_timeout_title"
             android:title="@string/ambient_notification_light_timeout_title"
+            settings:iconSpaceReserved="false"
             android:entries="@array/ambient_notification_light_timeout_entries"
             android:entryValues="@array/ambient_notification_light_timeout_values"
             android:defaultValue="0"
@@ -133,6 +141,7 @@
         <ListPreference
             android:key="ambient_notification_light_color_mode"
             android:title="@string/ambient_notification_light_color_mode_title"
+            settings:iconSpaceReserved="false"
             android:persistent="false"
             android:entries="@array/ambient_notification_light_color_mode_entries"
             android:entryValues="@array/ambient_notification_light_color_mode_values"
@@ -142,6 +151,7 @@
             android:key="ambient_notification_light_color"
             android:summary="@string/ambient_notification_light_color_summary"
             android:title="@string/ambient_notification_light_color_title"
+            settings:iconSpaceReserved="false"
             ledPreview="true"
             android:defaultValue="0xFF3980FF" 
             android:dependency="pulse_ambient_light" />

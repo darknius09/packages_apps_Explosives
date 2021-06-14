@@ -18,6 +18,7 @@
     <com.android.settings.custom.preference.SecureSettingListPreference
         android:key="doze_always_on_auto_mode"
         android:title="@string/night_display_auto_mode_title"
+        settings:iconSpaceReserved="false"
         android:dialogTitle="@string/night_display_auto_mode_title"
         android:entries="@array/doze_always_on_auto_mode_entries"
         android:entryValues="@array/doze_always_on_auto_mode_values"
@@ -25,10 +26,12 @@
 
     <Preference
         android:key="doze_always_on_auto_since"
-        android:title="@string/night_display_start_time_title" />
+        android:title="@string/night_display_start_time_title"
+        settings:iconSpaceReserved="false" />
 
     <Preference
         android:key="doze_always_on_auto_till"
-        android:title="@string/night_display_end_time_title" />
+        android:title="@string/night_display_end_time_title"
+        settings:iconSpaceReserved="false" />
 
 </PreferenceScreen>

@@ -25,6 +25,7 @@
             android:key="fod_color"
             android:dialogTitle="@string/fod_pressed_color_title"
             android:title="@string/fod_pressed_color_title"
+            settings:iconSpaceReserved="false"
             android:summary="%s"
             android:entries="@array/fod_pressed_color_entries"
             android:entryValues="@array/fod_pressed_color_values"
@@ -34,12 +35,14 @@
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="fod_recognizing_animation"
             android:title="@string/fod_recog_animation"
+            settings:iconSpaceReserved="false"
             android:summary="@string/fod_recog_animation_summary"
             android:defaultValue="false" />
 
     <com.android.settings.custom.preference.SystemSettingListPreference 
             android:key="fod_recognizing_animation_list" 
-            android:title="@string/fod_recog_animation_effect_title" 
+            android:title="@string/fod_recog_animation_effect_title"
+            settings:iconSpaceReserved="false" 
             android:summary="%s" 
             android:entries="@array/fod_recognizing_animation_entries" 
             android:entryValues="@array/fod_recognizing_animation_values" 
