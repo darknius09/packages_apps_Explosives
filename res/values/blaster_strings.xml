@@ -428,5 +428,6 @@
     <string name="overlay_theme_summary">Enable different overlays to customize your device</string>
     <string name="settings_card">Settings homepage cards</string>
     <string name="settings_card_gray">Gray (Default)</string>
-    <string name="settings_card_transparent">Transparent</string>    
+    <string name="settings_card_transparent">Transparent</string>
+    <string name="settings_card_none">None</string>        
 </resources>

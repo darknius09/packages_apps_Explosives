@@ -22,7 +22,7 @@
 
     <ListPreference
         android:key="android.theme.customization.icon_pack"
-        android:title="@string/theme_customization_sysui_icons_title"/>
+        android:title="@string/theme_customization_sysui_icon_title"/>
 
     <PreferenceCategory
         android:title="@string/settings_label">
