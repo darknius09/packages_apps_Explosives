@@ -420,5 +420,13 @@
     <string name="ticker_animation_mode_alpha_fade">Fade</string>
     <string name="ticker_animation_mode_scroll">Scroll</string>
     <string name="ticker_tick_duration_title">Ticker duration</string>
-    <string name="unit_milliseconds">milliseconds</string>    
+    <string name="unit_milliseconds">milliseconds</string>
+
+    
+    <!-- Theme overlays -->
+    <string name="overlay_theme_title">Theme overlays</string>
+    <string name="overlay_theme_summary">Enable different overlays to customize your device</string>
+    <string name="settings_card">Settings homepage cards</string>
+    <string name="settings_card_gray">Gray (Default)</string>
+    <string name="settings_card_transparent">Transparent</string>    
 </resources>

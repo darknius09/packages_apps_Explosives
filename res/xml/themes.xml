@@ -42,16 +42,11 @@
             android:key="android.theme.customization.font"
             android:title="@string/theme_customization_font_title"
             settings:iconSpaceReserved="false"/>
-
-        <ListPreference
-            android:key="android.theme.customization.adaptive_icon_shape"
-            android:title="@string/theme_customization_icon_shape_title"
-            settings:iconSpaceReserved="false"/>
-
-        <ListPreference
-            android:key="android.theme.customization.icon_pack.android"
-            android:title="@string/theme_customization_sysui_icon_title"
-            settings:iconSpaceReserved="false"/>
+    <Preference 
+        android:title="@string/overlay_theme_title"
+        android:summary="@string/overlay_theme_summary" 
+        android:key="prebuilt_overlays_key" 
+        android:fragment="com.blaster.settings.fragments.StyleSystemOverlayPreferenceFragment"/>
 
         <com.android.settings.custom.preference.SystemSettingListPreference
             android:key="systemui_plugin_volume"
