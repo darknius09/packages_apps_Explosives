@@ -13,11 +13,14 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
--->
+-->      
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/blaster_settings_title" >
+    android:title="@string/blaster_settings_title"
+    android:gravity="center">
+    <PreferenceCategory
+        android:gravity="center">
 
         <!-- Themes -->
         <Preference
@@ -25,7 +28,8 @@
             android:title="@string/themes_title"
             android:summary="@string/themes_summary"
             android:fragment="com.blaster.settings.Themes"
-	    android:layout="@layout/preference_explosives_themes"
+            android:icon="@drawable/ic_settings_themes"
+            android:layout="@layout/op_home_preference_card_top"
 	    />
 
         <!-- Statusbar -->
@@ -33,7 +37,8 @@
             android:id="@+id/statusbar"
             android:title="@string/statusbar_title"
             android:fragment="com.blaster.settings.Statusbar"
-            android:layout="@layout/preference_explosives_statusbar"
+            android:icon="@drawable/ic_settings_statusbar"
+            android:layout="@layout/op_home_preference_card_middle" 
             />
 
         <!-- Quick Settings -->
@@ -41,31 +46,37 @@
             android:id="@+id/quick_settings"
             android:title="@string/quicksettings_title"
             android:fragment="com.blaster.settings.QuickSettings"
-            android:layout="@layout/preference_explosives_quicksettings"
+            android:icon="@drawable/ic_settings_quicksettings"
+            android:layout="@layout/op_home_preference_card_middle"
             />
 
-        <!-- Buttons -->
-        <Preference
-            android:key="button_settings"
-            android:title="@string/button_settings_title"
-            android:fragment="com.blaster.settings.ButtonSettings"
-	    android:layout="@layout/preference_explosives_buttons"
-	    />
 
         <!-- Notifications -->
         <Preference
             android:key="notifications_settings"
             android:title="@string/notifications_title"
             android:fragment="com.blaster.settings.Notifications"
-	    android:layout="@layout/preference_explosives_notifications"
-	    />
+            android:icon="@drawable/ic_settings_notifications"
+	        android:layout="@layout/op_home_preference_card_bottom"
+	    />            
+
 
         <!-- Lockscreen -->
         <Preference
             android:key="lockscreen_settings"
             android:title="@string/lockscreen_title"
             android:fragment="com.blaster.settings.Lockscreen"
-	    android:layout="@layout/preference_explosives_lockscreen"
+            android:icon="@drawable/ic_settings_lockscreen"
+	        android:layout="@layout/op_home_preference_card_top"
+	    />
+
+        <!-- Buttons -->
+        <Preference
+            android:key="button_settings"
+            android:title="@string/button_settings_title"
+            android:fragment="com.blaster.settings.ButtonSettings"
+            android:icon="@drawable/ic_settings_buttons"
+            android:layout="@layout/op_home_preference_card_middle"	    
 	    />
 
         <!-- Miscellaneous -->
@@ -73,7 +84,8 @@
             android:key="miscellaneous_settings"
             android:title="@string/miscellaneous_title"
             android:fragment="com.blaster.settings.Miscellaneous"
-	    android:layout="@layout/preference_explosives_miscellaneous"
+            android:icon="@drawable/ic_settings_miscellaneous"
+	        android:layout="@layout/op_home_preference_card_middle"
 	    />
 
         <!-- FOD -->
@@ -82,7 +94,8 @@
             android:title="@string/fod_title"
             android:summary="@string/fod_icon_picker_summary"
             android:fragment="com.blaster.settings.Fod"
-	    android:layout="@layout/preference_blaster_fod"
+            android:icon="@drawable/fod_menu"
+	        android:layout="@layout/op_home_preference_card_bottom"
 	    />
-
-</PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>  
