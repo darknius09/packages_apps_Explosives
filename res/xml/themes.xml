@@ -44,6 +44,7 @@
             settings:iconSpaceReserved="false"/>
     <Preference 
         android:title="@string/overlay_theme_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/overlay_theme_summary" 
         android:key="prebuilt_overlays_key" 
         android:fragment="com.blaster.settings.fragments.StyleSystemOverlayPreferenceFragment"/>
