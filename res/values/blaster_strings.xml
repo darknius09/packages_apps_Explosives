@@ -464,5 +464,9 @@
     <string name="network_traffic_hidearrow_summary">Hide the network traffic indicator arrows</string>
     <string name="network_traffic_refresh_interval_title">Refresh interval</string>
     <string name="network_traffic_refresh_interval_summary">Duration after which speed is remeasured</string>
-    <string name="unit_seconds">seconds</string>               
+    <string name="unit_seconds">seconds</string>
+
+    <!-- Per-app volume -->
+    <string name="show_app_volume_title">Show app volume</string>
+    <string name="show_app_volume_summary">Show app volume in expanded volume panel</string>               
 </resources>
