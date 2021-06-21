@@ -143,6 +143,13 @@
             android:entryValues="@array/clock_date_position_values"
             android:dependency="clock_date_display" />
 
+    <Preference
+        android:key="network_traffic"
+        android:title="@string/network_traffic_settings_title"
+        settings:iconSpaceReserved="false"
+        android:summary="@string/network_traffic_settings_summary"
+        android:fragment="com.blaster.settings.fragments.TrafficIndicators"/>            
+
     </PreferenceCategory>        
 
 </PreferenceScreen>
