@@ -47,7 +47,7 @@ public class Notifications extends SettingsPreferenceFragment {
 
     private Preference mAlertSlider;
 
-    private static final String ALERT_SLIDER_PREF = "alert_slider_notifications"
+    private static final String ALERT_SLIDER_PREF = "alert_slider_notifications";
 
     @Override
     public void onCreate(Bundle icicle) {

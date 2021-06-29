@@ -44,4 +44,10 @@
         android:summary="@string/alert_slider_notifications_summary"
         android:defaultValue="true" />
 
+
+	<com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="less_boring_heads_up"
+        android:title="@string/less_boring_heads_up_title"
+        android:summary="@string/less_boring_heads_up_summary"
+        android:defaultValue="false" />
 </PreferenceScreen>
