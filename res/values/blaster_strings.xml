@@ -468,5 +468,9 @@
 
     <!-- Per-app volume -->
     <string name="show_app_volume_title">Show app volume</string>
-    <string name="show_app_volume_summary">Show app volume in expanded volume panel</string>               
+    <string name="show_app_volume_summary">Show app volume in expanded volume panel</string>
+
+    <!-- Alert Slider Notifications (OnePlus devices) -->
+    <string name="alert_slider_notifications_title">Alert slider notifications</string>
+    <string name="alert_slider_notifications_summary">Display notification when changing alert slider position</string>                   
 </resources>

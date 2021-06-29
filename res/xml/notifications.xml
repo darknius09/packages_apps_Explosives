@@ -38,4 +38,10 @@
         android:summary="@string/ticker_screen_summary"
         android:fragment="com.blaster.settings.fragments.Ticker"/>        
 
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="alert_slider_notifications"
+        android:title="@string/alert_slider_notifications_title"
+        android:summary="@string/alert_slider_notifications_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
