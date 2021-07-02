@@ -48,6 +48,7 @@
 	<com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="less_boring_heads_up"
         android:title="@string/less_boring_heads_up_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/less_boring_heads_up_summary"
         android:defaultValue="false" />
 
@@ -55,6 +56,7 @@
             android:key="heads_up_notifications_enabled"
             android:fragment="com.blaster.settings.fragments.HeadsUp"
             android:title="@string/heads_up_notifications"
+            settings:iconSpaceReserved="false"
             android:summary="@string/heads_up_notifications_summary"
             android:defaultValue="true" />                    
 </PreferenceScreen>

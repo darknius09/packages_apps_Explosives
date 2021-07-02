@@ -19,24 +19,28 @@
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="gaming_mode_headsup_toggle"
         android:title="@string/gaming_mode_headsup_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/gaming_mode_headsup_summary"
         android:defaultValue="true" />
 
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="gaming_mode_hw_keys_toggle"
         android:title="@string/gaming_mode_hardware_keys_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/gaming_mode_hardware_keys_summary"
         android:defaultValue="false" />
 
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="gaming_mode_manual_brightness_toggle"
         android:title="@string/gaming_mode_brightness_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/gaming_mode_brightness_summary"
         android:defaultValue="true" />
 
     <com.android.settings.custom.preference.SystemSettingListPreference
         android:key="gaming_mode_ringer_mode"
         android:title="@string/gaming_mode_ringer_title"
+        settings:iconSpaceReserved="false"
         android:entries="@array/gaming_mode_ringer_entries"
         android:entryValues="@array/gaming_mode_ringer_values"
         android:defaultValue="0"
@@ -45,6 +49,7 @@
     <com.android.settings.custom.preference.SystemSettingListPreference
         android:key="gaming_mode_notifications"
         android:title="@string/gaming_mode_notifications_title"
+        settings:iconSpaceReserved="false"
         android:entries="@array/gaming_mode_notifications_entries"
         android:entryValues="@array/gaming_mode_notifications_values"
         android:defaultValue="3"
@@ -53,6 +58,7 @@
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="gaming_mode_dynamic_state"
         android:title="@string/gaming_mode_dynamic_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/gaming_mode_dynamic_summary"
         android:defaultValue="false" />
 

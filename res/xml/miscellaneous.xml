@@ -61,6 +61,7 @@
         android:key="gaming_mode_enabled"
         android:fragment="com.blaster.settings.fragments.GamingMode"
         android:title="@string/gaming_mode_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/gaming_mode_summary"
         android:defaultValue="false" />
     </PreferenceCategory>
