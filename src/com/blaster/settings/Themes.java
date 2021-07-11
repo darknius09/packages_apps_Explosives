@@ -116,6 +116,10 @@ public class Themes extends DashboardFragment implements
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new QsTileStylePreferenceController(context));
         return controllers;
+        controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.signal_icon"));
+        controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.wifi_icon"));
     }
 
     /**
