@@ -46,8 +46,16 @@
     <com.android.settings.custom.preference.SecureSettingSwitchPreference
         android:key="qs_brightness_position_bottom"
         android:title="@string/qs_brightness_position_bottom_title"
+        settings:iconSpaceReserved="false"
         android:summary="@string/qs_brightness_position_bottom_summary"
         android:defaultValue="false" />            
+
+    <com.android.settings.custom.preference.SecureSettingSwitchPreference
+        android:key="qs_show_auto_brightness"
+        android:title="@string/qs_show_auto_brightness_title"
+        settings:iconSpaceReserved="false"
+        android:summary="@string/qs_show_auto_brightness_summary"
+        android:defaultValue="false" />
 
         <com.android.settings.custom.preference.SystemSettingListPreference
             android:key="clear_all_icon_style"

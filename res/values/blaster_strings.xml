@@ -549,5 +549,9 @@
 
     <!--QS brightness slider at bottom-->
     <string name="qs_brightness_position_bottom_title">Brightness slider at bottom</string>
-    <string name="qs_brightness_position_bottom_summary">Show the brightness slider on bottom quick settings</string>                                                       
+    <string name="qs_brightness_position_bottom_summary">Show the brightness slider on bottom quick settings</string>
+
+    <!--Show Auto Brightness in QS-->
+    <string name="qs_show_auto_brightness_title">Auto Brightness in QS</string>
+    <string name="qs_show_auto_brightness_summary">Show the auto brightness icon besides the brightness slider</string>                                                           
 </resources>
