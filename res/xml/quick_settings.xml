@@ -43,6 +43,12 @@
 	        android:entryValues="@array/slider_styles_values"
             android:defaultValue="0" />
 
+    <com.android.settings.custom.preference.SecureSettingSwitchPreference
+        android:key="qs_brightness_position_bottom"
+        android:title="@string/qs_brightness_position_bottom_title"
+        android:summary="@string/qs_brightness_position_bottom_summary"
+        android:defaultValue="false" />            
+
         <com.android.settings.custom.preference.SystemSettingListPreference
             android:key="clear_all_icon_style"
             settings:iconSpaceReserved="false"
