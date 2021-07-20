@@ -553,5 +553,9 @@
 
     <!--Show Auto Brightness in QS-->
     <string name="qs_show_auto_brightness_title">Auto Brightness in QS</string>
-    <string name="qs_show_auto_brightness_summary">Show the auto brightness icon besides the brightness slider</string>                                                           
+    <string name="qs_show_auto_brightness_summary">Show the auto brightness icon besides the brightness slider</string>
+    
+    <!--Show Brightness Slider in QS-->
+    <string name="qs_show_brightness_slider_title">Brightness Slider in QS</string>
+    <string name="qs_show_brightness_slider_summary">Show brightness slider in QS</string>                                                          
 </resources>
