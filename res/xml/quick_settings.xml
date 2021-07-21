@@ -82,6 +82,14 @@
         android:entryValues="@array/qs_tint_values"
         android:defaultValue="2" />
 
+    <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+        android:key="qs_panel_bg_alpha"
+        android:title="@string/qs_panel_alpha_title"
+        android:defaultValue="255"
+        android:max="255"
+        settings:min="0"
+        settings:units="" />
+
     <PreferenceCategory
         android:key="qs_columns_rows_category"
         android:title="@string/qs_columns_rows_category_title">

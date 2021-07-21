@@ -557,5 +557,8 @@
     
     <!--Show Brightness Slider in QS-->
     <string name="qs_show_brightness_slider_title">Brightness Slider in QS</string>
-    <string name="qs_show_brightness_slider_summary">Show brightness slider in QS</string>                                                          
+    <string name="qs_show_brightness_slider_summary">Show brightness slider in QS</string>
+
+    <!-- QuickSettings panel opacity -->
+    <string name="qs_panel_alpha_title">QS panel opacity</string>                                                              
 </resources>
