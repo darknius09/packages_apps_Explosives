@@ -58,5 +58,13 @@
             android:title="@string/heads_up_notifications"
             settings:iconSpaceReserved="false"
             android:summary="@string/heads_up_notifications_summary"
-            android:defaultValue="true" />                    
+            android:defaultValue="true" /> 
+
+       <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+           android:key="notification_bg_alpha"
+           android:title="@string/notification_alpha_title"
+           android:defaultValue="255"
+           android:max="255"
+           settings:min="0"
+           settings:units="" />                               
 </PreferenceScreen>
