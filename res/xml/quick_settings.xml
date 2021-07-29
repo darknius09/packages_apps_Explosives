@@ -16,8 +16,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/quicksettings_title" >
 
-    <PreferenceCategory>
-
     <!-- QS media player -->
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="qs_media_player"
@@ -71,8 +69,6 @@
 	        android:entryValues="@array/clearall_icon_values"
             android:defaultValue="0" />            
 
-    </PreferenceCategory>
-
     <com.android.settings.custom.preference.SystemSettingListPreference
         android:key="qs_panel_bg_use_new_tint"
         android:title="@string/qs_bg_use_new_tint"
@@ -89,10 +85,6 @@
         android:max="255"
         settings:min="0"
         settings:units="" />
-
-    <PreferenceCategory
-        android:key="qs_columns_rows_category"
-        android:title="@string/qs_columns_rows_category_title">
 
         <com.android.settings.custom.preference.CustomSystemSeekBarPreference
             android:key="qs_rows_portrait"
@@ -125,7 +117,4 @@
             android:min="1"
             android:defaultValue="4"
             settings:units="" />
-
-      </PreferenceCategory>
-
 </PreferenceScreen>
