@@ -185,6 +185,7 @@
     <string name="volume_panel_oreo">Oreo</string>
     <string name="volume_panel_tiled">Tiled</string>
     <string name="volume_panel_miui">MIUI</string>
+    <string name="volume_panel_oos">OOS</string>
 
     <!-- Volume Panel Plugin Values -->
     <string name="volume_panel_aosp_val" translatable="false">co.potatoproject.plugin.volume.aosp</string>
@@ -192,6 +193,7 @@
     <string name="volume_panel_oreo_val" translatable="false">co.potatoproject.plugin.volume.oreo</string>
     <string name="volume_panel_tiled_val" translatable="false">co.potatoproject.plugin.volume.tiled</string>
     <string name="volume_panel_miui_val" translatable="false">co.potatoproject.plugin.volume.miui</string>
+    <string name="volume_panel_oos_val" translatable="false">co.potatoproject.plugin.volume.oos</string>
 
     <!-- QS rows and columns -->
     <string name="qs_columns_rows_category_title">QS columns and rows</string>
