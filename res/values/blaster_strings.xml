@@ -438,6 +438,7 @@
     <string name="settings_card_gray">Gray (Default)</string>
     <string name="settings_card_transparent">Transparent</string>
     <string name="settings_card_none">None</string>
+    <string name="settings_card_no_icon">No Icons</string>
 
     <string name="settings_dashboard_oos11">OxygenOS 11 (Default)</string>
     <string name="settings_dashboard_aosp">AOSP</string>

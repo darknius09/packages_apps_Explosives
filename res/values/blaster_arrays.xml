@@ -422,13 +422,15 @@
     <string-array name="settings_card_entries" translatable="false">
         <item>@string/settings_card_gray</item>
         <item>@string/settings_card_transparent</item>
-        <item>@string/settings_card_none</item>        
+        <item>@string/settings_card_none</item>
+        <item>@string/settings_card_no_icon</item>        
     </string-array>
 
     <string-array name="settings_card_values" translatable="false">
         <item>0</item>
         <item>1</item>
-        <item>2</item>        
+        <item>2</item>
+        <item>3</item>        
     </string-array>
 
     <string-array name="settings_dashboard_entries" translatable="false">
