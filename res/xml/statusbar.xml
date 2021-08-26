@@ -15,7 +15,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/statusbar_title" >
-    <PreferenceCategory>
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="use_old_mobiletype"
         android:title="@string/use_old_mobiletype_title"
@@ -149,7 +148,5 @@
         settings:iconSpaceReserved="false"
         android:summary="@string/network_traffic_settings_summary"
         android:fragment="com.blaster.settings.fragments.TrafficIndicators"/>            
-
-    </PreferenceCategory>        
 
 </PreferenceScreen>

@@ -26,9 +26,6 @@
         android:title="@string/theme_customization_sysui_icon_title"
         settings:iconSpaceReserved="false"/>
 
-    <PreferenceCategory
-        android:title="@string/settings_label">
-
         <com.android.settings.custom.preference.SystemSettingListPreference
             android:key="style_overlay_settings_cards"
             android:title="@string/settings_card"
@@ -44,7 +41,5 @@
             android:entries="@array/settings_dashboard_entries"
             android:entryValues="@array/settings_dashboard_values"
             android:defaultValue="0" />
-
-    </PreferenceCategory>
 
 </PreferenceScreen>

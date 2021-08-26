@@ -16,9 +16,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/themes_title" >
 
-    <PreferenceCategory
-        android:key="theme_customization_category">
-
         <Preference
             android:key="dark_ui_mode"
             android:title="@string/dark_ui_mode"
@@ -93,5 +90,4 @@
         android:defaultValue="0xffff4081"
         android:dependency="use_wall_accent"
         android:persistent="false" />               
-    </PreferenceCategory>
 </PreferenceScreen>

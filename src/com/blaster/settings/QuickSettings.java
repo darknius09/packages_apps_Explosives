@@ -79,7 +79,6 @@ public class QuickSettings extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle icicle) {
-        getActivity().getActionBar().hide();        
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.quick_settings);
         PreferenceScreen prefSet = getPreferenceScreen();
