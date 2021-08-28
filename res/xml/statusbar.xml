@@ -141,7 +141,11 @@
             android:entries="@array/clock_date_position_entries"
             android:entryValues="@array/clock_date_position_values"
             android:dependency="clock_date_display" />
-
+        <Preference
+            android:key="statusbar_battery"
+            android:title="@string/battery_percent_title"
+            android:summary="@string/battery_percent_summary"
+            android:fragment="com.blaster.settings.fragments.StatusbarBatterySettings"/>
     <Preference
         android:key="network_traffic"
         android:title="@string/network_traffic_settings_title"
