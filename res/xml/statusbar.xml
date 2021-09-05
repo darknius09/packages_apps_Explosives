@@ -77,70 +77,14 @@
         settings:iconSpaceReserved="false"
         android:summary="@string/roaming_indicator_icon_summary"
         android:defaultValue="true"/>
+ 
+    <Preference
+        android:key="statusbar_clock_settings"
+        android:title="@string/status_bar_clock_date_title"
+        settings:iconSpaceReserved="false"
+        android:summary="@string/status_bar_clock_date_summary"
+        android:fragment="com.blaster.settings.fragments.StatusbarClockSettings"/>      
 
-        <com.android.settings.custom.preference.SystemSettingSwitchPreference
-            android:key="statusbar_clock"
-            android:title="@string/status_bar_clock_show"
-            settings:iconSpaceReserved="false"
-            android:defaultValue="true" />
-
-        <ListPreference
-            android:key="statusbar_clock_style"
-            android:title="@string/status_bar_clock_style_title"
-            settings:iconSpaceReserved="false"
-            android:dialogTitle="@string/status_bar_clock_style_title"
-            android:entries="@array/status_bar_clock_style_entries"
-            android:entryValues="@array/status_bar_clock_style_values"
-            android:dependency="statusbar_clock" />
-
-        <ListPreference
-            android:key="statusbar_am_pm"
-            android:title="@string/status_bar_am_pm_title"
-            settings:iconSpaceReserved="false"
-            android:dialogTitle="@string/status_bar_am_pm_title"
-            android:entries="@array/status_bar_am_pm_entries"
-            android:entryValues="@array/status_bar_am_pm_values"
-            android:dependency="statusbar_clock" />
-
-        <com.android.settings.custom.preference.SystemSettingSwitchPreference
-            android:key="statusbar_clock_seconds"
-            android:title="@string/clock_seconds_display"
-            settings:iconSpaceReserved="false"
-            android:dependency="statusbar_clock"
-            android:defaultValue="false" />
-
-        <ListPreference
-            android:key="clock_date_display"
-            android:title="@string/clock_date_display"
-            settings:iconSpaceReserved="false"
-            android:summary="@string/clock_date_display_summary"
-            android:entries="@array/clock_date_display_entries"
-            android:entryValues="@array/clock_date_display_values"
-            android:dependency="statusbar_clock" />
-
-        <ListPreference
-            android:key="clock_date_style"
-            android:title="@string/clock_date_style"
-            settings:iconSpaceReserved="false"
-            android:entries="@array/clock_date_style_entries"
-            android:entryValues="@array/clock_date_style_values"
-            android:dependency="clock_date_display" />
-
-        <ListPreference
-            android:key="clock_date_format"
-            android:title="@string/clock_date_format"
-            settings:iconSpaceReserved="false"
-            android:entries="@array/clock_date_format_entries_values"
-            android:entryValues="@array/clock_date_format_entries_values"
-            android:dependency="clock_date_display" />
-
-        <ListPreference
-            android:key="statusbar_clock_date_position"
-            android:title="@string/clock_date_position"
-            settings:iconSpaceReserved="false"
-            android:entries="@array/clock_date_position_entries"
-            android:entryValues="@array/clock_date_position_values"
-            android:dependency="clock_date_display" />
         <Preference
             android:key="statusbar_battery"
             android:title="@string/battery_percent_title"
