@@ -71,6 +71,7 @@
             android:key="clear_all_icon_style"
             settings:iconSpaceReserved="false"
             android:title="@string/clearall_icon_title"
+            android:summary="@string/clearall_icon_summary"
             android:entries="@array/clearall_icon_entries"
 	        android:entryValues="@array/clearall_icon_values"
             android:defaultValue="0" />            

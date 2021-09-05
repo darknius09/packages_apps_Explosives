@@ -552,7 +552,7 @@
 
     <!-- Clear All -->
     <string name="clearall_icon_title">Clear All Icon</string>
-    <string name="clearall_icon_summary">Change Clear All Icon </string>
+    <string name="clearall_icon_summary">Change Clear All Icon (Restart SystemUI after changing) </string>
     <string name="clearall_icon_default">Cross (Default)</string>
     <string name="clearall_icon_oos">OOS</string>
 
