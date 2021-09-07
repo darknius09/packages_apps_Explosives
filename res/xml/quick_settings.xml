@@ -38,34 +38,12 @@
         android:summary="@string/oos_qsclock_summary"
         android:defaultValue="true" />        
 
-    <com.android.settings.custom.preference.SecureSettingSwitchPreference
-        android:key="qs_brightness_position_bottom"
-        android:title="@string/qs_brightness_position_bottom_title"
+    <Preference
+        android:key="brightness_settings"
+        android:title="@string/brightness_settings_title"
         settings:iconSpaceReserved="false"
-        android:summary="@string/qs_brightness_position_bottom_summary"
-        android:defaultValue="false" />            
-
-    <com.android.settings.custom.preference.SecureSettingSwitchPreference
-        android:key="qs_show_auto_brightness"
-        android:title="@string/qs_show_auto_brightness_title"
-        settings:iconSpaceReserved="false"
-        android:summary="@string/qs_show_auto_brightness_summary"
-        android:defaultValue="false" />
-
-    <com.android.settings.custom.preference.SecureSettingSwitchPreference
-        android:key="qs_show_brightness_slider"
-        android:title="@string/qs_show_brightness_slider_title"
-        settings:iconSpaceReserved="false"
-        android:summary="@string/qs_show_brightness_slider_summary"
-        android:defaultValue="true" />        
-
-    <com.android.settings.custom.preference.SystemSettingListPreference
-        android:key="slider_style"
-        settings:iconSpaceReserved="false"
-        android:title="@string/slider_styles_title"
-        android:entries="@array/slider_styles_entries"
-	    android:entryValues="@array/slider_styles_values"
-        android:defaultValue="0" />
+        android:summary="@string/brightness_settings_summary"
+        android:fragment="com.blaster.settings.fragments.BrightnessSettings"/> 
 
         <com.android.settings.custom.preference.SystemSettingListPreference
             android:key="clear_all_icon_style"

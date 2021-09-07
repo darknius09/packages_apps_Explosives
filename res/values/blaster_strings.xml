@@ -39,6 +39,8 @@
     <string name="dark_ui_mode_summary">Its all dark here</string>
     <string name="themes_summary">Personalize your device appearance</string>
     <string name="ambient_settings">Ambient Settings</string>
+    <string name="brightness_settings_title">Brightness Slider</string>
+    <string name="brightness_settings_summary">Brightness slider customizations</string>
 
     <!-- Double Tap gestures -->
     <string name="double_tap_sleep_lockscreen_title">Double tap to sleep on lockscreen</string>

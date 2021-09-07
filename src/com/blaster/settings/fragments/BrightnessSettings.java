@@ -1,5 +1,6 @@
+
 /*
- * Copyright (C) 2020 Project-Awaken
+ * Copyright (C) 2021 PixelBlaster-OS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.blaster.settings;
+package com.blaster.settings.fragments;
 
 import static android.os.UserHandle.USER_SYSTEM;
 
@@ -66,27 +67,25 @@ import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class QuickSettings extends SettingsPreferenceFragment {
+public class BrightnessSettings extends SettingsPreferenceFragment {
 
     private IOverlayManager mOverlayManager;
     private PackageManager mPackageManager;    
     private static final String SLIDER_STYLE  = "slider_style";
-    private static final String CLEAR_ALL_ICON_STYLE  = "clear_all_icon_style";
 
-    private SystemSettingListPreference mClearAll;
     private SystemSettingListPreference mSlider;
     private Handler mHandler;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.quick_settings);
+        addPreferencesFromResource(R.xml.brightness_settings);
         PreferenceScreen prefSet = getPreferenceScreen();
         final ContentResolver resolver = getActivity().getContentResolver();
         Context mContext = getContext();
         mOverlayManager = IOverlayManager.Stub.asInterface(
                 ServiceManager.getService(Context.OVERLAY_SERVICE));
-        mClearAll = (SystemSettingListPreference) findPreference(CLEAR_ALL_ICON_STYLE);        
+        mSlider = (SystemSettingListPreference) findPreference(SLIDER_STYLE);
         mCustomSettingsObserver.observe();        
 
     }
@@ -102,60 +101,72 @@ public class QuickSettings extends SettingsPreferenceFragment {
             Context mContext = getContext();
             ContentResolver resolver = mContext.getContentResolver();
             resolver.registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.CLEAR_ALL_ICON_STYLE  ),
-                    false, this, UserHandle.USER_ALL);                    
+                    Settings.System.SLIDER_STYLE  ),
+                    false, this, UserHandle.USER_ALL);                 
         }
 
         @Override
         public void onChange(boolean selfChange, Uri uri) {
-            if (uri.equals(Settings.System.getUriFor(Settings.System.CLEAR_ALL_ICON_STYLE))) {
-                updateClearAll();                
+            if (uri.equals(Settings.System.getUriFor(Settings.System.SLIDER_STYLE  ))) {
+                updateSlider();
             }
         }
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mClearAll) {
+        if (preference == mSlider) {
             mCustomSettingsObserver.observe();
-             Utils.showSystemUiRestartDialog(getContext());
-            return true;            
+            return true;
         }
         return false;
     }
 
-
-    private void updateClearAll() {
+    private void updateSlider() {
         ContentResolver resolver = getActivity().getContentResolver();
-        boolean ClearAllDefault = Settings.System.getIntForUser(getContext().getContentResolver(),
-                Settings.System.CLEAR_ALL_ICON_STYLE , 0, UserHandle.USER_CURRENT) == 0;
-        boolean ClearAllOOS = Settings.System.getIntForUser(getContext().getContentResolver(),
-                Settings.System.CLEAR_ALL_ICON_STYLE , 0, UserHandle.USER_CURRENT) == 1;
 
-        if (ClearAllDefault) {
-            setDefaultClearAll(mOverlayManager);
-        } else if (ClearAllOOS) {
-            enableClearAll(mOverlayManager, "com.android.theme.systemui_clearall_oos");
+        boolean sliderDefault = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.SLIDER_STYLE , 0, UserHandle.USER_CURRENT) == 0;
+        boolean sliderOOS = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.SLIDER_STYLE , 0, UserHandle.USER_CURRENT) == 1;
+        boolean sliderAosp = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.SLIDER_STYLE , 0, UserHandle.USER_CURRENT) == 2;
+        boolean sliderRUI = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.SLIDER_STYLE , 0, UserHandle.USER_CURRENT) == 3;
+        boolean sliderA12 = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.SLIDER_STYLE , 0, UserHandle.USER_CURRENT) == 4;                
+
+        if (sliderDefault) {
+            setDefaultSlider(mOverlayManager);
+        } else if (sliderOOS) {
+            enableSlider(mOverlayManager, "com.android.theme.systemui_slider_oos");
+        } else if (sliderAosp) {
+            enableSlider(mOverlayManager, "com.android.theme.systemui_slider.aosp");
+        } else if (sliderRUI) {
+            enableSlider(mOverlayManager, "com.android.theme.systemui_slider.rui");
+        } else if (sliderA12) {
+            enableSlider(mOverlayManager, "com.android.theme.systemui_slider.a12");            
+
         }
     }
 
-    public static void setDefaultClearAll(IOverlayManager overlayManager) {
-        for (int i = 0; i < CLEAR_ALL_ICONS.length; i++) {
-            String icons = CLEAR_ALL_ICONS[i];
+    public static void setDefaultSlider(IOverlayManager overlayManager) {
+        for (int i = 0; i < SLIDERS.length; i++) {
+            String sliders = SLIDERS[i];
             try {
-                overlayManager.setEnabled(icons, false, USER_SYSTEM);
+                overlayManager.setEnabled(sliders, false, USER_SYSTEM);
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
         }
     }
 
-    public static void enableClearAll(IOverlayManager overlayManager, String overlayName) {
+    public static void enableSlider(IOverlayManager overlayManager, String overlayName) {
         try {
-            for (int i = 0; i < CLEAR_ALL_ICONS.length; i++) {
-                String icons = CLEAR_ALL_ICONS[i];
+            for (int i = 0; i < SLIDERS.length; i++) {
+                String sliders = SLIDERS[i];
                 try {
-                    overlayManager.setEnabled(icons, false, USER_SYSTEM);
+                    overlayManager.setEnabled(sliders, false, USER_SYSTEM);
                 } catch (RemoteException e) {
                     e.printStackTrace();
                 }
@@ -175,8 +186,11 @@ public class QuickSettings extends SettingsPreferenceFragment {
         }
     }
 
-    public static final String[] CLEAR_ALL_ICONS = {
-        "com.android.theme.systemui_clearall_oos"
+    public static final String[] SLIDERS = {
+        "com.android.theme.systemui_slider_oos",
+        "com.android.theme.systemui_slider.aosp",
+        "com.android.theme.systemui_slider.rui",
+        "com.android.theme.systemui_slider.a12"        
     };
 
     @Override
@@ -190,7 +204,7 @@ public class QuickSettings extends SettingsPreferenceFragment {
                 public List<SearchIndexableResource> getXmlResourcesToIndex(
                         Context context, boolean enabled) {
                     final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.quick_settings;
+                    sir.xmlResId = R.xml.brightness_settings;
                     return Arrays.asList(sir);
                 }
 
