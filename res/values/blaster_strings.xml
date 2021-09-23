@@ -528,10 +528,6 @@
     <string name="dialog_delete_title">Delete</string>
     <string name="dialog_delete_message">Remove selected item?</string>
 
-    <!-- Qs Clock -->
-    <string name="oos_qsclock">Qs clock</string>
-    <string name="oos_qsclock_summary">Display an oos like clock on qs</string>
-
 
     <string name="use_wall_accent_string">Wallpaper based accent</string>
     <string name="use_wall_accent_summary">(BETA) Auto sets an accent color based on your wallpaper</string>
