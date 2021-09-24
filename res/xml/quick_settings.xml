@@ -31,6 +31,13 @@
         android:summary="@string/artwork_media_background_summary"
         android:defaultValue="false" />
 
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="qsclock_left"
+        android:title="@string/qsclock_left_title"
+        settings:iconSpaceReserved="false"
+        android:summary="@string/qsclock_left_summary"
+        android:defaultValue="false" /> 
+
     <Preference
         android:key="brightness_settings"
         android:title="@string/brightness_settings_title"
