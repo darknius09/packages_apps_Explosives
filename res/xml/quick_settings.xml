@@ -32,11 +32,11 @@
         android:defaultValue="false" />
 
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
-        android:key="oos_qsclock"
-        android:title="@string/oos_qsclock"
+        android:key="qsclock_left"
+        android:title="@string/qsclock_left_title"
         settings:iconSpaceReserved="false"
-        android:summary="@string/oos_qsclock_summary"
-        android:defaultValue="true" />        
+        android:summary="@string/qsclock_left_summary"
+        android:defaultValue="false" /> 
 
     <Preference
         android:key="brightness_settings"

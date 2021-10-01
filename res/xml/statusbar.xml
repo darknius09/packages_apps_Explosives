@@ -90,11 +90,5 @@
             android:title="@string/battery_percent_title"
             android:summary="@string/battery_percent_summary"
             android:fragment="com.blaster.settings.fragments.StatusbarBatterySettings"/>
-    <Preference
-        android:key="network_traffic"
-        android:title="@string/network_traffic_settings_title"
-        settings:iconSpaceReserved="false"
-        android:summary="@string/network_traffic_settings_summary"
-        android:fragment="com.blaster.settings.fragments.TrafficIndicators"/>            
 
 </PreferenceScreen>
