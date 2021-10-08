@@ -21,7 +21,7 @@
         android:title="@string/allow_signature_fake"
         settings:iconSpaceReserved="false"
         android:summary="@string/allow_signature_fake_summary"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
 
     <PreferenceCategory
         android:key="media">
