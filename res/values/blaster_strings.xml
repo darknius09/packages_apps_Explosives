@@ -599,4 +599,8 @@
     <!-- Qs Clock on left-->
     <string name="qsclock_left_title">Qs Clock on left</string>
     <string name="qsclock_left_summary">Show the Qs Clock on the left</string>
+
+    <!-- ad-blocker -->
+    <string name="hosts_block_title">Ad-block</string>
+    <string name="hosts_block_summary">Block ads with a modified hosts file. Turn off to use third party solutions or if apps cause issues.</string>
 </resources>
