@@ -79,4 +79,10 @@
             android:entries="@array/clock_date_position_entries"
             android:entryValues="@array/clock_date_position_values"
             android:dependency="clock_date_display" />
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="statusbar_clock_chip"
+            android:title="@string/status_bar_show_clock_bg"
+            android:dependency="statusbar_clock"
+            android:defaultValue="true" />
 </PreferenceScreen>
